@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Diabetes Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+        <body>
+<h1 class="heading1">Diabetes Predictor Machine Learning App</h1>
+<h4 class="heading2">Note:Please fill all the fields to predict a result</h4>
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0"><br><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br><br>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80"><br><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br><br>
+                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br><br>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+		<div class="results">
+			{% if prediction==1 %}
+				<h1><span class='danger'>Oops! You have Diabetes, Please take care of yourself.</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='oops.gif') }}" alt="Diabetes Image">
+			{% elif prediction==0 %}
+				<h1 class='safe'>Congrats! You DON'T have diabetes</h1>
+				<img class="gif1" src="{{ url_for('static', filename='enjoy.gif') }}" alt="Not Diabetes Image">
+			{% endif %}
+		</div>
+            <br>
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/Ankurgharde/Diabetes_Prediction"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/ankurgharde/"><i class="fab fa-linkedin fa-lg contact-icon1"></i></a>
+           </div>
+           <br>
+           <p class='footer-description'>Made with ❤️ by Ankur Gharde</p>
+       </div><br><br>
+
+    </body>
+</html>

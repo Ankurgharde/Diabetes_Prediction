@@ -1,0 +1,130 @@
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#ffff66,
+ #66ff33);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.description p{
+	color: #ffffff;
+    font-style: italic;
+    font-size: 14px;
+    margin: -5px 0 0;
+}
+
+/* Text Area */
+.ml-container{
+   	flex: 1 0 auto;
+   	text-align:center;
+}
+
+.form-input {
+	text-align: center;
+	width: 350px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+/* Predict Button */
+.my-cta-button{
+	background: #f9f9f9;
+   	border: 2px solid #000000;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #8c8c8c;
+	margin-top: 10px;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    color: #4d089a;
+    border: 2px solid #4d089a;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+/* Contact */
+.contact-icon{
+	color: black;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: white;
+}
+.contact-icon1{
+	color: blue;
+	padding: 7px;
+}
+.contact-icon1:hover{
+	color: white;
+	}
+.footer-description{
+	color:black;
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Result */
+.results{
+    text-align: center;
+    padding: 10px 200px 0px 0px;
+	flex: 1 0 auto;
+}
+
+.danger{
+    color: #ff0000;
+    text-align:center;
+    padding:0px 0px 0px 170px;
+   }
+
+.safe{
+    color: green;
+    text-align:center;
+    padding:0px 0px 0px 170px;
+
+}
+
+.gif{
+	width: 13%;
+	padding: 0px 200px 0px 410px;
+}
+
+.gif1{
+	width: 13%;
+   	padding: 0px 200px 0px 430px;
+
+}
+h1{
+color:white;
+text-align:center;
+}
+.heading1{
+color:Black;
+}
+.heading2{
+color:red;
+text-align:center;
+}
