@@ -127,10 +127,10 @@ Now that our machine learning pipeline and model are ready we will start buildin
 
 •	Back-end (developed using Flask in Python 3.9)
 
----hs
+
 command for install flask
 pip install Flask
----
+
 
 ## Front-end of Web Application  
 
@@ -152,9 +152,7 @@ Testing App
 
 One final step before publish the application on Heroku is to test the web app locally. Open terminal navigate to folder where ‘app.py’ is saved on. Run the python file with below code:
 
----hs
 python app.py
----
 
 Output in terminal when app.py is executed
 
