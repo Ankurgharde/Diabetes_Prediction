@@ -197,7 +197,7 @@ Web application opened on local machine
 
 ## Click on Deploy & Connect to your GitHub repository where code is hosted.
 
-![](images/Conect.png)
+![](images/Connect.png)
 
 ## Deploy branch
 
