@@ -146,7 +146,7 @@ pip install Flask
 
 The back-end of a web application is developed using a Flask framework. 
 
-![](images/flask%20app.png)
+![](images/flask_app.png)
 
 Testing App
 
