@@ -16,7 +16,7 @@ Web App gif
 
 In this project, the objective is to predict whether the person has Diabetes Or not based on various features like Glucose level, Insulin, Age, and BMI. 
 
-(Pima Indians dataset) Dataset is downloaded from the Kaggle. Here I am used a Logistic Regression Algorithm. It’s a Supervised Machine Learning Algorithm.
+(Pima Indians dataset) Dataset is downloaded from the Kaggle. Here used a Logistic Regression, Supervised Machine Learning Algorithm.
 
 ## The following features have been provided to help us predict whether a person is diabetic or not:
 
